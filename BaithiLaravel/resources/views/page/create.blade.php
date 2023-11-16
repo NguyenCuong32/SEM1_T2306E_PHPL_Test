@@ -31,6 +31,7 @@
             @enderror
         <label >Note</label><br>
         <input type="text" name="note"><br>
+        <input type="submit" value="Addnew" ><br>
     </form>
     <a href="/show">Show productList</a>
 </body>

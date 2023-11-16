@@ -10,7 +10,7 @@
     <form action="/create" method="POST" >
         @csrf
         <label >ProductType</label><br>
-        <input type="text" name="producttype" value="{{$}}"><br>
+        <input type="text" name="producttype" value="{{}}"><br>
             @error('producttype')
                 {{$messages}}
             @enderror
@@ -31,6 +31,7 @@
             @enderror
         <label >Note</label><br>
         <input type="text" name="note"><br>
+        <input type="submit" name="submit" value="Update">
     </form>
 </body>
 </html>
