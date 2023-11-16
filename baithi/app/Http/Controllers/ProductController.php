@@ -26,16 +26,5 @@ class ProductController extends Controller
         
         return \redirect('product/index')-> with('success','');      
     }
-    public function edit($id){
-        $student=Product::find($id);
-        return view("students/edit",compact('student'));
-    }
-    public function update(Request $request, $id){        
-        $student=Product::find($id);
-        $student->name=$request->name;
-        $student->email=$request->email;
-        $student->password=Hash::make($request->password);
-        $student->save();
-        return \redirect('student/index')-> with('success','');
-    }
+   
 }
