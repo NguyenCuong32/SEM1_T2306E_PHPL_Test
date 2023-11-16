@@ -22,7 +22,7 @@
             <th>Update</th>
 </thead>
 <tbody>
-@foreach($students as $student)
+@foreach($products as $product)
     <tr>    
         <td>{{$product-> id}}</td>
         <td>{{$product-> ProductType}}</td>
