@@ -23,10 +23,10 @@ class ProductController extends Controller
     public function store()
     {
         $validatedData = request()->validate([
-            'type' => 'required|string|max:3',
-            'code' => 'required|string|max:6',
-            'name' => 'required|string|max:50',
-            'quantity' => 'required|numeric',
+            'type' => 'required|string|max:3|alpha_dash',
+            'code' => 'required|string|max:6|alpha_dash',
+            'name' => 'required|string|max:50|alpha_dash',
+            'quantity' => 'required|numeric|alpha_dash',
             'note' => 'required'
         ]);
 
