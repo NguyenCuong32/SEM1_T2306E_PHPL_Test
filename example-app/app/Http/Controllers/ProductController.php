@@ -38,14 +38,14 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         $data = request()->all();
-        $student = productModel::fint($id);
-        $student->update($data);
+        $product = productModel::fint($id);
+        $product->update($data);
         return redirect()->route("index");
     }
     public function destroy(Request $request, $id)
     {
-        $student = productModel::find($id);
-        $student->delete();
+        $product = productModel::find($id);
+        $product->delete();
         return redirect()->route("index");
     }
 }
