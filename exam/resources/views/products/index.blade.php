@@ -20,14 +20,14 @@
             <th>Update</th>
 </thead>
 <tbody>
-@foreach($products as product)
+@foreach($products as $product)
     <tr>    
         <td>{{$product-> id}}</td>
         <td>{{$product-> ProductType}}</td>
         <td>{{$product-> ProductCode}}</td>
         <td>{{$product-> ProductName}}</td>
-        <td>{{$product->Quantity}}</td>
-        <td>{{$product->Note}}</td>
+        <td>{{$product-> Quantity}}</td>
+        <td>{{$product-> Note}}</td>
         <td><a href ="/product/update/{{$product-> id}}">Update </a></td>
     </tr>     
     @endforeach
