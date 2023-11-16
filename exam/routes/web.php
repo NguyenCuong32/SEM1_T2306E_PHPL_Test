@@ -23,4 +23,5 @@ route::get('/product/create',function (){
     Route::get('product/index',[App\Http\Controllers\ProductController::class,'index']);
     Route::get('product/update/{id}',[App\Http\Controllers\ProductController::class,'edit']);
     Route::post('product/update/{id}',[App\Http\Controllers\ProductController::class,'update']);
+    Route::get('product/report',[App\Http\Controllers\ProductController::class,'report']);
     
