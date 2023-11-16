@@ -20,8 +20,8 @@
 @foreach($products as $product)
     <tr>    
         <td>{{$product-> ProductType}}</td>
-        <td>{{$product->Quantity}}</td>
-        <td>{{$product->Note}}</td>
+        <td>{{$product-> Quantity}}</td>
+        <td>{{$product-> Note}}</td>
     </tr>     
     @endforeach
 </tbody>
