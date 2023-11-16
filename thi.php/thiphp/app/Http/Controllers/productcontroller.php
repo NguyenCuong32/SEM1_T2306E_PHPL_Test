@@ -11,7 +11,10 @@ class productcontroller extends Controller
         return view("products.add");
     }
     public function add(Request $request){
-        $rule=[];
+        $rule=[
+            "$ProductType"=>requeted
+
+        ];
         $message=[];
         $this->validate($request,$rule,$message);
 

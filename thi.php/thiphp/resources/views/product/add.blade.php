@@ -4,6 +4,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Add product</h1>
     <form action="" method="post">
         @csrf
         <label>ProductType</label> <br>
