@@ -24,21 +24,21 @@
 <tbody>
 @foreach($students as $student)
     <tr>    
-        <td>{{$student-> id}}</td>
-        <td>{{$student-> ProductType}}</td>
-        <td>{{$student-> ProductCode}}</td>
-        <td>{{$student-> ProductName}}</td>
-        <td>{{$student-> Quantity}}</td>
-        <td>{{$student->created_at}}</td>
-        <td>{{$student->updated_at}}</td>
-        <td>{{$student-> Node}}</td>
+        <td>{{$product-> id}}</td>
+        <td>{{$product-> ProductType}}</td>
+        <td>{{$product-> ProductCode}}</td>
+        <td>{{$product-> ProductName}}</td>
+        <td>{{$product-> Quantity}}</td>
+        <td>{{$product->created_at}}</td>
+        <td>{{$product->updated_at}}</td>
+        <td>{{$product-> Node}}</td>
 
-        <td><a href ="/student/update/{{$student-> id}}">Update </a></td>
+        <td><a href ="/product/update/{{$product-> id}}">Update </a></td>
     </tr>     
     @endforeach
 </tbody>
 </table>
 <br>
 <b>Register Click Here: </b>
-<a href = "/student/create"><b>Create New Student</b></a>
+<a href = "/student/create"><b>Create New </b></a>
 </html>
