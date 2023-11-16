@@ -6,13 +6,10 @@
     <title>Eric</title>
 </head> 
 <h2>Edit student</h2>
-    <form action="/student/update/{{$product->id}}" method = "post">
+    <form action="/product/update/{{$product->id}}" method = "post">
         @csrf
-        <label for="studentname"><b>Student Name</b></label>
-        <br>
+       
         <input type="text" name="ProductType" value="{{$product->ProductType}}">
-        <br>
-        <label for="studentage"><b>Student Age</b></label>
         <br>
         <input type="text" name="ProductCode" value="{{$product->ProductCode}}">
         <br>
