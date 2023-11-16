@@ -16,7 +16,7 @@
         <input type="number" name="Quantity"><br>
         <label >Note</label><br>
         <input type="text" name="Note"><br>
-        <input type="submit"name="submit" value"">
+        <input type="submit"name="submit" value>
     </form>
 </body>
 </html>
