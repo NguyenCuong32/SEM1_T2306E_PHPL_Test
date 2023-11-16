@@ -15,24 +15,22 @@ class ProductController extends Controller
         return view('products.index', compact('products'));
     }
 
-    public function create()
-    {
+    public function create(Request $request)
+    { 
         return view('products.create');
     }
 
     public function store(Request $request)
     {
-        $request->validate([
-            'product_code' => 'required',
-            'product_name' => 'required',
-            'quantity' => 'required|integer',
-            'productType' => 'required|interger',
-            'note' => 'required|interger',
-        ]);
-
-        Product::create($request->all());
-        return redirect()->route('products.index')->with('success', 'Product created successfully');
-    }
+            $data = $request->all();
+            $data['product_code']=$request->product_code;
+            $data['product_name']=$request->product_name;
+            $data['quantity']=($request->quantity);
+            $data['productType']= ($request->productType);
+            $data['note']= ($request->note);
+            Product::create($data);
+           echo "Save to database done";
+        }
 
     public function show(Product $product)
     {

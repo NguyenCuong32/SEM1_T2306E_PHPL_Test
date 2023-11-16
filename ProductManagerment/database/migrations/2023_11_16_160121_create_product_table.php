@@ -1,11 +1,10 @@
 <?php
 
-// database/migrations/[timestamp]_create_products_table.php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
- class CreateProductsTable extends Migration
+
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -22,11 +21,11 @@ use Illuminate\Support\Facades\Schema;
             $table->timestamps();
         });
     }
-     /**
+    /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('product');
     }
-}
+};
